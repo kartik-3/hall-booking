@@ -23,7 +23,7 @@ app
     //Make a booking for a room
     checkCustomer(req, res);
   })
-  .listen(8001);
+  .listen(process.env.PORT);
 
 const getRooms = (res) => {
   if (rooms.length < 1) {
